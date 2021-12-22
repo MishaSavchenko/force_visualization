@@ -18,5 +18,6 @@ wrench.wrench.force = Vector3(*random_force.tolist())
 wrench.wrench.torque = Vector3(*random_force.tolist())
 
 while not rospy.is_shutdown():
-   pub.publish(wrench)
-   r.sleep()
+    rospy.loginfo("\n%s",wrench)
+    pub.publish(wrench)
+    r.sleep()
