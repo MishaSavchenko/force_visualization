@@ -1,0 +1,10 @@
+<library path="lib/libforce_visualization">
+  <class name="force_visualization/ImuTest"
+         type="force_visualization::ImuDisplayTest"
+         base_class_type="rviz::Display">
+    <description>
+      Displays direction and scale of accelerations from geometry_msgs/WrenchStamped messages.
+    </description>
+    <message_type>geometry_msgs/WrenchStamped</message_type>
+  </class>
+</library>
