@@ -2,7 +2,8 @@
 A bit of an experiment to learn about RViz plugins. After using the Robotique FT 300 sensor, I felt like visualizing wrench measurement in the measurement axes would be a lot more helpful when debugging and tuning sensors, compliance controllers, and other stuff.
 
 # TODO
-- [ ] Create github remote
+- [X] Create github remote
+- [X] Update package.xml
 - [ ] Finish helper testing scripts
 - [ ] Document testing scripts
 - [ ] Move alpha value out of axes colors
