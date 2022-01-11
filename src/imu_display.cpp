@@ -1,32 +1,3 @@
-/*
- * Copyright (c) 2012, Willow Garage, Inc.
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are met:
- *
- *     * Redistributions of source code must retain the above copyright
- *       notice, this list of conditions and the following disclaimer.
- *     * Redistributions in binary form must reproduce the above copyright
- *       notice, this list of conditions and the following disclaimer in the
- *       documentation and/or other materials provided with the distribution.
- *     * Neither the name of the Willow Garage, Inc. nor the names of its
- *       contributors may be used to endorse or promote products derived from
- *       this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
- * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- * POSSIBILITY OF SUCH DAMAGE.
- */
-
 #include <OGRE/OgreSceneManager.h>
 #include <OGRE/OgreSceneNode.h>
 
@@ -39,9 +10,9 @@
 #include <rviz/properties/int_property.h>
 #include <rviz/visualization_manager.h>
 
-#include "imu_visual.h"
+#include "force_visualization/imu_visual.h"
 
-#include "imu_display.h"
+#include "force_visualization/imu_display.h"
 
 namespace force_visualization {
 
@@ -65,9 +36,7 @@ std::vector<SIMetric> SI_METRICS{SIMetric("", "", 1e0),        //
                                  SIMetric("Micro", "μ", 1e-6), //
                                  SIMetric("Nano", "n", 1e-9),  //
                                  SIMetric("Pico", "p", 1e-12)};
-// BEGIN_TUTORIAL
-// The constructor must have no arguments, so we can't give the
-// constructor the parameters it needs to fully initialize.
+
 ImuDisplayTest::ImuDisplayTest() {
   color_property_ = new rviz::ColorProperty(
       "Color", QColor(204, 51, 204), "Color to draw the acceleration arrows.",
@@ -213,4 +182,3 @@ void ImuDisplayTest::processMessage(
 // global scope, outside our package's namespace.
 #include <pluginlib/class_list_macros.h>
 PLUGINLIB_EXPORT_CLASS(force_visualization::ImuDisplayTest, rviz::Display)
-// END_TUTORIAL

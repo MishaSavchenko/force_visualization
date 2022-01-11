@@ -12,8 +12,14 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   rviz
 )
-catkin_package()
-include_directories(${catkin_INCLUDE_DIRS})
+catkin_package(
+    INCLUDE_DIRS include
+    LIBRARIES ${PROJECT_NAME}
+)
+include_directories(
+    include
+    ${catkin_INCLUDE_DIRS}
+)
 link_directories(${catkin_LIBRARY_DIRS})
 set(CMAKE_AUTOMOC ON)
 
