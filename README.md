@@ -5,9 +5,9 @@ A bit of an experiment to learn about RViz plugins. After using the Robotique FT
 - [X] Create github remote
 - [X] Update package.xml
 - [X] Move header libraries to include directory
+- [X] Move alpha value out of axes colors
 - [ ] Finish helper testing scripts
 - [ ] Document testing scripts
-- [ ] Move alpha value out of axes colors
 - [ ] Remove color property
 - [ ] Remove history length
 - [ ] Add live data readings
@@ -19,3 +19,4 @@ A bit of an experiment to learn about RViz plugins. After using the Robotique FT
 - [ ] Document imu display and visual
 - [ ] Support for install space
 - [ ] Support for ROS2  
+- [ ] Rename visualization classes

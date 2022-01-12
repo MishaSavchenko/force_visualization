@@ -71,7 +71,7 @@ ImuDisplayTest::ImuDisplayTest() {
       new rviz::FloatProperty("Alpha",                                        //
                               1.0,                                            //
                               "0 is fully transparent, 1.0 is fully opaque.", //
-                              axes_colors_,                                   //
+                              this,                                           //
                               SLOT(updateColorAndAlpha()));
 
   history_length_property_ = new rviz::IntProperty(
