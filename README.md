@@ -4,6 +4,7 @@ A bit of an experiment to learn about RViz plugins. After using the Robotique FT
 # TODO
 - [X] Create github remote
 - [X] Update package.xml
+- [X] Move header libraries to include directory
 - [ ] Finish helper testing scripts
 - [ ] Document testing scripts
 - [ ] Move alpha value out of axes colors
@@ -16,6 +17,5 @@ A bit of an experiment to learn about RViz plugins. After using the Robotique FT
 - [ ] Add torque visualization readings
 - [ ] Adjust default axes colors for easier visualization when using the tf of the parent frame id
 - [ ] Document imu display and visual
-- [ ] Move header libraries to include directory
 - [ ] Support for install space
 - [ ] Support for ROS2  
