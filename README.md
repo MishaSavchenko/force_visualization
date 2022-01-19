@@ -6,10 +6,10 @@ A bit of an experiment to learn about RViz plugins. After using the Robotique FT
 - [X] Update package.xml
 - [X] Move header libraries to include directory
 - [X] Move alpha value out of axes colors
-- [ ] Finish helper testing scripts
-- [ ] Document testing scripts
 - [ ] Remove color property
 - [ ] Remove history length
+- [ ] Finish helper testing scripts
+- [ ] Document testing scripts
 - [ ] Add live data readings
     - [ ] Add frame_id reading
     - [ ] Add force readings
